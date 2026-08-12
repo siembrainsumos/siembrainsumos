@@ -1,5 +1,50 @@
 <!DOCTYPE html>
 <html lang="es">
+  <style>
+@keyframes textShine {
+  0% { background-position: 0% 50%; }
+  100% { background-position: 200% 50%; }
+}
+.animated-title {
+  background: linear-gradient(90deg, #ffffff, #2F4B1E, #ffffff);
+  background-size: 200% auto;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+  animation: textShine 3s linear infinite;
+}
+.wsp-float {
+  position: fixed;
+  bottom: 24px;
+  right: 24px;
+  background: #25D366;
+  width: 60px;
+  height: 60px;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.3);
+  z-index: 999;
+  animation: pulse 2s infinite;
+  transition: transform 0.2s;
+}
+.wsp-float:hover { transform: scale(1.1); }
+@keyframes pulse {
+  0% { box-shadow: 0 0 0 0 rgba(37,211,102,0.6); }
+  70% { box-shadow: 0 0 0 14px rgba(37,211,102,0); }
+  100% { box-shadow: 0 0 0 0 rgba(37,211,102,0); }
+}
+.wsp-float svg { width: 32px; height: 32px; fill: #fff; }
+.map-container {
+  width: 100%;
+  height: 400px;
+  border-radius: 12px;
+  overflow: hidden;
+  box-shadow: 0 4px 16px rgba(0,0,0,0.2);
+}
+.map-container iframe { width: 100%; height: 100%; border: 0; }
+</style>
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -209,7 +254,9 @@ footer img{width:150px;background:white;border-radius:5px;padding:5px;margin-bot
 
 </style>
 </head>
-
+<a href="https://wa.me/59800000000?text=Hola,%20quiero%20consultar%20sobre%20Siembra%20Insumos%20y%20Servicios%20Agropecuarios" class="wsp-float" target="_blank" rel="noopener">
+  <svg viewBox="0 0 24 24"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347z"/><path d="M12 0C5.373 0 0 5.373 0 12c0 2.121.554 4.114 1.522 5.842L0 24l6.32-1.657A11.94 11.94 0 0012 24c6.627 0 12-5.373 12-12S18.627 0 12 0zm0 22.05a9.99 9.99 0 01-5.14-1.42l-.369-.22-3.82 1.001 1.02-3.726-.24-.383A9.99 9.99 0 012.05 12C2.05 6.5 6.5 2.05 12 2.05S21.95 6.5 21.95 12 17.5 21.95 12 21.95z"/></svg>
+</a>
 <body>
 <header>
   <div class="container nav">
@@ -326,9 +373,15 @@ footer img{width:150px;background:white;border-radius:5px;padding:5px;margin-bot
     <div class="contact-grid">
       <div>
         <div class="info-box">
-          <small>Dirección</small>
-          <p>Ruta 21 km 198,5<br>Colonia, Uruguay 70000</p>
-        </div>
+          <small><div class="map-container">
+  <iframe
+    src="https://www.google.com/maps?q=Ruta+21+km+198.5,+San+Pedro,+Colonia&output=embed"
+    allowfullscreen loading="lazy" referrerpolicy="no-referrer-when-downgrade">
+  </iframe>
+</div>
+<p style="margin-top:8px; text-align:center; font-weight:600;">
+  📍 Ruta 21 km 198,5 · 70000 San Pedro, Departamento de Colonia
+</p>
         
 <div class="info-box">
   <small>Casa Central</small>
