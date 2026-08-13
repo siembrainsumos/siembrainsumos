@@ -399,6 +399,11 @@ footer img{height:60px;width:auto;background:white;border-radius:5px;padding:5px
   *{animation-duration:0.01ms !important; animation-iteration-count:1 !important; transition-duration:0.01ms !important; scroll-behavior:auto !important;}
 }
 
+
+/* Información ampliada de productos y sucursales */
+.product-info-grid{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:16px;margin-top:28px}.product-info-item{display:flex;gap:14px;padding:22px;border:1px solid rgba(0,0,0,.08);border-radius:18px;background:#fff}.product-info-item>span{font-size:18px}.product-info-item h3{margin:0 0 6px}.product-info-item p{margin:0;line-height:1.6}.field-commitment{margin-top:28px;padding:28px;border-radius:20px;background:rgba(43,104,55,.08);display:flex;align-items:center;justify-content:space-between;gap:24px}.field-commitment p{margin:0;line-height:1.6}.branch-grid{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:22px;margin-top:28px}.branch-card{padding:28px;border-radius:20px;border:1px solid rgba(0,0,0,.08);background:#fff}.branch-icon{font-size:24px;margin-bottom:8px}.branch-card h3{margin:0 0 8px}.branch-card p{margin:0 0 8px}.branch-card>a:not(.btn){display:block;font-weight:700;margin-bottom:16px}.branch-card .btn{display:inline-flex}.branch-closing{text-align:center;margin-top:28px;font-weight:600}.branch-card a.btn{color:#fff;text-decoration:none}
+@media(max-width:700px){.product-info-grid,.branch-grid{grid-template-columns:1fr}.field-commitment{flex-direction:column;align-items:flex-start}.field-commitment .btn{width:100%;justify-content:center}}
+
 /* Mejoras de conversión, catálogo, marcas y móvil */
 .whatsapp-inline{background:#25D366!important;color:#083b20!important}
 .hero-actions{display:flex;gap:12px;flex-wrap:wrap;margin-top:8px}.hero-note{font-size:.82rem!important;color:#cfe1ef!important;margin:12px 0 0!important}
@@ -606,6 +611,40 @@ footer img{height:60px;width:auto;background:white;border-radius:5px;padding:5px
   </div>
 </section>
 
+<section class="section products-info reveal" id="productos-completos">
+  <div class="container">
+    <div class="section-title">
+      <div class="tag">Nuestros productos</div>
+      <h2>Insumos para productores tamberos, ganaderos y agricultores</h2>
+      <p>En nuestras sucursales te ofrecemos una amplia gama de insumos agropecuarios diseñados especialmente para productores tamberos, ganaderos y agricultores.</p>
+    </div>
+    <div class="product-info-grid">
+      <div class="product-info-item"><span>🔹</span><div><h3>Semillas de alta calidad</h3><p>Variedades adaptadas a las condiciones locales para maximizar tu rendimiento.</p></div></div>
+      <div class="product-info-item"><span>🔹</span><div><h3>Fertilizantes</h3><p>Nutrientes esenciales para tus cultivos, garantizando un crecimiento saludable.</p></div></div>
+      <div class="product-info-item"><span>🔹</span><div><h3>Protección de cultivos</h3><p>Soluciones efectivas para el control de malezas, plagas y enfermedades.</p></div></div>
+      <div class="product-info-item"><span>🔹</span><div><h3>Productos veterinarios</h3><p>Cuidado integral para tu ganado, asegurando su salud y bienestar.</p></div></div>
+      <div class="product-info-item"><span>🔹</span><div><h3>Alimentos balanceados</h3><p>Nutrición óptima para tus animales, mejorando su productividad.</p></div></div>
+      <div class="product-info-item"><span>🔹</span><div><h3>Indumentaria agrícola</h3><p>Ropa y accesorios diseñados para el trabajo en el campo, combinando comodidad y resistencia.</p></div></div>
+      <div class="product-info-item"><span>🔹</span><div><h3>Infraestructura rural</h3><p>Soluciones para mejorar tus instalaciones.</p></div></div>
+    </div>
+    <div class="field-commitment">
+      <p><strong>Comprometidos con el campo uruguayo</strong>, en SIEMBRA trabajamos codo a codo contigo para potenciar tu producción.</p>
+      <a class="btn btn-green whatsapp-inline" href="https://wa.me/59898528770?text=Hola,%20quiero%20consultar%20por%20productos%20de%20Siembra" target="_blank" rel="noopener">Consultá por WhatsApp</a>
+    </div>
+  </div>
+</section>
+
+<section class="section branches reveal" id="sucursales">
+  <div class="container">
+    <div class="section-title"><div class="tag">Sucursales</div><h2>Encontrá tu Siembra más cercana</h2></div>
+    <div class="branch-grid">
+      <article class="branch-card"><div class="branch-icon">📍</div><h3>San Pedro</h3><p>Ruta 21 km 198,5</p><a href="tel:+59898528770">098 528 770</a><a class="btn btn-green" href="https://wa.me/59898528770?text=Hola,%20me%20comunico%20con%20la%20sucursal%20de%20San%20Pedro" target="_blank" rel="noopener">WhatsApp San Pedro</a></article>
+      <article class="branch-card"><div class="branch-icon">📍</div><h3>Carmelo</h3><p>Ruta 21 km 251,5</p><a href="tel:+59898716491">098 716 491</a><a class="btn btn-green" href="https://wa.me/59898716491?text=Hola,%20me%20comunico%20con%20la%20sucursal%20de%20Carmelo" target="_blank" rel="noopener">WhatsApp Carmelo</a></article>
+    </div>
+    <p class="branch-closing">¡Visitanos y descubrí cómo podemos ayudarte a alcanzar tus objetivos! 🌾🐄</p>
+  </div>
+</section>
+
 <section class="section brands reveal">
   <div class="container">
     <div class="section-title">
@@ -623,7 +662,7 @@ footer img{height:60px;width:auto;background:white;border-radius:5px;padding:5px
       </div>
     </div>
     <div class="brand-grid" aria-label="Marcas destacadas">
-  <div class="brand-chip featured">Husqvarna<small>Representante oficial</small></div><div class="brand-chip">STIHL<small>Equipos y herramientas</small></div><div class="brand-chip">Deyuntas<small>Marca destacada</small></div><div class="brand-chip">Optimizer<small>Identificación bovina</small></div><div class="brand-chip">Y-Tex<small>Sanidad animal</small></div>
+  <div class="brand-chip featured">Husqvarna<small>Representante oficial</small></div><div class="brand-chip">STIHL<small>Equipos y herramientas</small></div><div class="brand-chip">Optimizer<small>Identificación bovina</small></div><div class="brand-chip">Y-Tex<small>Sanidad animal</small></div>
 </div>
   </div>
 </section>
@@ -713,8 +752,16 @@ footer img{height:60px;width:auto;background:white;border-radius:5px;padding:5px
           <a href="https://www.instagram.com/siembra_insumos/" target="_blank" rel="noopener">@siembra_insumos</a>
         </div>
         <div class="info-box">
-          <small>Teléfono</small>
+          <small>San Pedro</small>
           <a href="tel:+59898528770">098 528 770</a>
+        </div>
+        <div class="info-box">
+          <small>Carmelo</small>
+          <a href="tel:+59898716491">098 716 491</a>
+        </div>
+        <div class="info-box">
+          <small>Email</small>
+          <a href="mailto:info@siembra.com.uy">info@siembra.com.uy</a>
         </div>
       </div>
       <div class="hours reveal-stagger">
